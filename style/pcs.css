@@ -1,0 +1,29 @@
+.pcs-autocomplete-items {
+  position: relative;
+  max-height: 200px;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  overflow-y: scroll;
+}
+
+.pcs-autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.pcs-autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.pcs-autocomplete-active {
+  background-color: #558000 !important;
+  color: #ffffff;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="questionnaire-helpers.bundled.js"></script>
+    <script>
+        questionnaireHelpers.autocompletePCSProfessions("autocomplete-pcs-native-femme", { gender: "femme", strategy: "native" });
+        questionnaireHelpers.autocompletePCSProfessions("autocomplete-pcs-native-homme", { gender: "homme", strategy: "native" });
+        questionnaireHelpers.autocompletePCSProfessions("autocomplete-pcs-fuzzy-femme", { gender: "femme" });
+        questionnaireHelpers.autocompletePCSProfessions("autocomplete-pcs-fuzzy-homme", { gender: "homme" });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+        <h2>PCS Autocomplete : Native search</h2>
+
+        <p>Profession Femme :</p>
+
+        <!--Make sure the form has the autocomplete function switched off:-->
+        <div class="autocomplete" style="width: 500px">
+            <input
+                id="autocomplete-pcs-native-femme"
+                type="text"
+                name="profession"
+                placeholder="Commencez à taper votre profession..."
+            />
+        </div>
+
+        <p>Profession Homme :</p>
+
+        <!--Make sure the form has the autocomplete function switched off:-->
+        <div class="autocomplete" style="width: 500px">
+            <input
+            id="autocomplete-pcs-native-homme"
+            type="text"
+            name="profession"
+            placeholder="Commencez à taper votre profession..."
+            />
+        </div>
+
+        <h2>PCS Autocomplete : Fuzzy search</h2>
+
+        <p>Profession Femme :</p>
+
+        <!--Make sure the form has the autocomplete function switched off:-->
+        <div class="autocomplete" style="width: 500px">
+            <input
+                id="autocomplete-pcs-fuzzy-femme"
+                type="text"
+                name="profession"
+                placeholder="Commencez à taper votre profession..."
+            />
+        </div>
+
+        <p>Profession Homme :</p>
+
+        <!--Make sure the form has the autocomplete function switched off:-->
+        <div class="autocomplete" style="width: 500px">
+            <input
+            id="autocomplete-pcs-fuzzy-homme"
+            type="text"
+            name="profession"
+            placeholder="Commencez à taper votre profession..."
+            />
+        </div>
+    </div>
+  </body>
+</html>

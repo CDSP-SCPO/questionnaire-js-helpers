@@ -1,0 +1,83 @@
+{
+  "name": "@cdsp-scpo/questionnaire-js-helpers",
+  "version": "1.0.0",
+  "description": "Helper JS functions for social survey questionnaires",
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "build": "yarn && webpack",
+    "build:prod": "npm run build",
+    "clean:dist": "rm -rf dist",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server",
+    "eslint": "eslint --ext .js src/ --fix",
+    "eslint:check": "eslint --ext .js src/",
+    "prettier": "prettier --write \"**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}\"",
+    "prettier:check": "prettier --list-different \"**/*{.ts,.tsx,.js,.jsx,.css,.json,.md}\"",
+    "lint": "npm run eslint && npm run prettier",
+    "lint:check": "npm run eslint:check && npm run prettier:check",
+    "build:demo": "npm run build:prod && cp dist/* public/"
+  },
+  "keywords": [
+    "survey",
+    "questionnaires",
+    "pcs",
+    "autocomplete",
+    "insee"
+  ],
+  "homepage": "https://github.com/CDSP-SCPO/questionnaire-js-helpers",
+  "bugs": {
+    "url": "https://github.com/CDSP-SCPO/questionnaire-js-helpers/issues"
+  },
+  "author": {
+    "name": "CDSP",
+    "email": "itcdsp-scpolst@sciencespo.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CDSP-SCPO/questionnaire-js-helpers.git"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@nozbe/microfuzz": "1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@eslint/js": "^10.0.1",
+    "babel-loader": "^10.1.0",
+    "css-loader": "^7.1.4",
+    "eslint": "^10.1.0",
+    "eslint-config-prettier": "^10.1.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-no-null": "^1.0.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.4.0",
+    "prettier": "^3.8.1",
+    "sass": "^1.98.0",
+    "sass-loader": "^16.0.7",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.4.0",
+    "webpack": "^5.105.0",
+    "webpack-bundle-analyzer": "^5.2.0",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  },
+  "eslintIgnore": [
+    "**/*.d.ts",
+    "dist",
+    "*node_modules*",
+    "coverage",
+    "tests",
+    "venv",
+    ".venv"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
