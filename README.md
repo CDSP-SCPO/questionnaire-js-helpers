@@ -19,7 +19,7 @@ than 5000 pre-defined professions list.
 
 ## Demo
 
-[See Demo]()
+[See Demo](https://cdsp-scpo.github.io/questionnaire-js-helpers/)
 
 ## Getting Started
 
