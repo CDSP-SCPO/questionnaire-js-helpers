@@ -21,9 +21,11 @@ jobs:
           cache: yarn
           cache-dependency-path: yarn.lock
 
-      - run: yarn --frozen-lockfile
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
 
-      - run: yarn build:prod 
+      - name: Build library
+        run: yarn build:prod 
       
       - run: npm publish --provenance --access public
         env:
