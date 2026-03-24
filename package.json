@@ -5,6 +5,7 @@
   "files": [
     "dist",
     "src",
+    "style",
     "LICENSE",
     "README.md"
   ],
@@ -40,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CDSP-SCPO/questionnaire-js-helpers.git"
+    "url": "git+https://github.com/CDSP-SCPO/questionnaire-js-helpers.git"
   },
   "license": "Apache-2.0",
   "dependencies": {
